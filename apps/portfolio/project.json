@@ -21,7 +21,12 @@
             "input": "apps/portfolio/public"
           }
         ],
-        "styles": ["apps/portfolio/src/styles.scss"]
+        "styles": ["apps/portfolio/src/styles.scss"],
+        "server": "apps/portfolio/src/main.server.ts",
+        "ssr": {
+          "entry": "apps/portfolio/src/server.ts"
+        },
+        "outputMode": "server"
       },
       "configurations": {
         "production": {
@@ -59,7 +64,6 @@
         }
       },
       "defaultConfiguration": "development",
-      "dependsOn": ["portfolio-api:serve"],
       "options": {
         "proxyConfig": "apps/portfolio/proxy.conf.json"
       }
