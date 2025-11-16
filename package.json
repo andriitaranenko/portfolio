@@ -2,7 +2,10 @@
   "name": "@portfolio/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:portfolio:client": "nx serve portfolio",
+    "build:portfolio": "nx build portfolio"
+  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~20.3.0",

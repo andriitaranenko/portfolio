@@ -64,7 +64,6 @@
         }
       },
       "defaultConfiguration": "development",
-      "dependsOn": ["portfolio-api:serve"],
       "options": {
         "proxyConfig": "apps/portfolio/proxy.conf.json"
       }
